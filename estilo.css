@@ -71,19 +71,40 @@ li {
  ul li:hover ul {
     display:block;}
 
-.home{display: inline-block;
-text-align:right
-;padding-left: 1rem;}
-
-.sobreNosotros{display: inline-block;
-padding-left: 1rem;}
-
-.contacto{display: inline-block;
-padding-left: 1rem;}
-
-
-.categorias{display:inline-block;
-padding-left: 1rem;}
+    .home{display: inline-block;
+        transition: all 0.4s ease;}
+        
+    .home:hover{background-color: black;
+        transform: scale(1.1,1.1);
+        height: auto;
+        color: white;}
+        
+    .sobreNosotros{display: inline-block;
+        transition: all 0.4s ease;}
+        
+    .sobreNosotros:hover{background-color: black;
+        transform: scale(1.1,1.1);
+        height: auto;
+        color: white;}
+        
+        
+    .contacto{display: inline-block;
+        transition: all 0.4s ease;}
+        
+        
+    .contacto:hover{background-color: black;
+        transform: scale(1.1,1.1);
+        height: auto;
+        color: white;}
+        
+        
+    .categorias{display:inline-block;
+        transition: all 0.4s ease;}
+        
+    .categorias:hover{background-color: black;
+        transform: scale(1.1,1.1);
+        height: auto;
+        color: white;}
 
 
 /*Hasta aca va el Header*/
@@ -98,7 +119,7 @@ flex-direction: column;}
 
 .divBanner{text-align: center;}
 
-.banner{border:solid #9f0000 ;}
+.Banner{border:solid #9f0000 ;}
 
 .seccionOfertas{text-align: center;
     margin-left: 10rem;
@@ -113,7 +134,11 @@ margin: 2rem;
 color: #9f0000;}
 
 .im{margin: 1rem;
-border: #9f0000 solid;}
+border: #9f0000 solid;
+transition: all 0.4s ease;}
+
+.im:hover{transform: scale(1.1,1.1);
+height: auto;}
 
 p{color: white;
 font-size: 1.5rem;
