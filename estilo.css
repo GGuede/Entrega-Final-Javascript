@@ -1,0 +1,268 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+body{background-color: #242424;
+    font-family:'Gugi', cursive;
+    text-transform: capitalize;
+    }
+
+.contenedor{display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 8fr auto;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";}
+
+.contenedorSobre{display: grid;
+    grid-template-columns: 3fr 2fr;
+     grid-template-rows: auto 8fr auto;
+     grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";}
+
+.contenedorContacto{display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto 8fr auto;
+grid-template-areas:
+"header header"
+"main aside"
+"footer footer";}
+
+.header{background-color: white;
+grid-area: header;}
+
+h1{color: #9f0000;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.6rem;}
+    
+ul{list-style: none
+; color: #9f0000;padding: 1rem;}
+
+ul li a{text-decoration: none;
+color: #9f0000;}
+
+.listaHead{display:flex;
+    justify-content: space-between;
+padding-left: 2rem;
+text-align: center;}
+
+li {
+    display: inline-block;
+    position:relative;}
+
+ ul ul {
+    position: absolute;
+    display: none;
+    border:solid #9f0000;
+    padding: 1rem;
+    background-image:url(./Multimedia/aorus-logo.rgb.png);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: left center;}
+
+ ul ul li {
+    display: block;
+    margin: 1rem;
+ }
+ ul li:hover ul {
+    display:block;}
+
+.home{display: inline-block;
+text-align:right
+;padding-left: 1rem;}
+
+.sobreNosotros{display: inline-block;
+padding-left: 1rem;}
+
+.contacto{display: inline-block;
+padding-left: 1rem;}
+
+
+.categorias{display:inline-block;
+padding-left: 1rem;}
+
+
+/*Hasta aca va el Header*/
+
+.main{grid-area:main;
+display: flex;
+flex-direction: column;}
+
+.aside{grid-area:aside;
+display: flex;
+flex-direction: column;}
+
+.divBanner{text-align: center;}
+
+.banner{border:solid #9f0000 ;}
+
+.seccionOfertas{text-align: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 5rem;
+    padding: 1rem;}
+
+.divOfertas{text-align: center;}
+
+.ofertas{text-align: center;
+margin: 2rem;
+color: #9f0000;}
+
+.im{margin: 1rem;
+border: #9f0000 solid;}
+
+p{color: white;
+font-size: 1.5rem;
+text-align: right ;}
+
+.sobreNosotrosh2{color: #9f0000;
+text-align: center;
+display: inline-block;
+margin: 3rem;
+font-size: 3rem;}
+
+.titulosContacto{color: #9f0000;
+margin:1rem;
+padding: 1rem;
+text-align: center;
+font-size: 2rem;}
+
+.nombresContacto{ color: #9f0000;
+    margin:1rem;
+    margin-left: 10rem;
+    padding: 1rem;
+    font-size: 2rem;}
+
+.cajas{border:solid #9f0000;
+    color: #9f0000;
+    margin:1rem;
+    margin-left: 10rem;
+    padding: 1rem;
+    font-size: 2rem;}
+
+.enviar{background-color: #9f0000;
+margin-left: 50rem;
+margin-bottom: 1rem;
+padding: 1rem;
+color: white;
+font-size: 1.5rem;}
+
+.contAside{justify-items: center;}
+
+
+.imagenContacto{border:solid #9f0000;
+border-radius: 30%;
+margin: 5rem;
+margin-right: 6rem;
+height: 100%;
+width: 90%;
+text-align: center;}
+
+
+.imagenSobreNosotros{border-right: #9f0000 solid;
+width: 100%;
+height: 100%;}
+
+.pSobre{text-align: center;
+margin-left:2rem;
+padding:2rem;
+font-size: 2.5rem;
+height: 29rem;}
+
+/*Hasta aca va el main*/
+.footer{background-color: white;
+padding: 2rem;
+grid-area: footer;
+}
+
+.listaFooter{display: flex;
+   justify-content: space-between;
+}
+
+.redesSociales{
+word-spacing: 1rem;}
+
+footer ul li{
+padding-left: 1rem;}
+
+
+@media screen and (max-width: 480px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+}
+@media screen and (max-width: 1024px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+        "header"
+        "aside"
+        "main"
+        "footer";
+    }
+}
+@media screen and (max-width: 480px){
+    .contenedorContacto{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas:
+        "header"
+        "aside"
+        "main"
+        "footer";
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .contenedorContacto{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 2fr auto;
+        grid-template-areas:
+        "header"
+        "aside"
+        "main"
+        "footer";
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .contenedorSobre{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 2fr auto;
+        grid-template-areas:
+        "header"
+        "aside"
+        "main"
+        "footer";
+    }
+}
+
+@media screen and (max-width: 480px){
+    .contenedorSobre{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 2fr auto;
+        grid-template-areas:
+        "header"
+        "aside"
+        "main"
+        "footer";
+    }
+}
+
+
+
+
+
+
+
+
