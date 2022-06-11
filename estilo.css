@@ -37,7 +37,8 @@ grid-area: header;}
 h1{color: #9f0000;
     font-size: 2rem;
     text-align: center;
-    padding: 0.6rem;}
+    padding: 0.6rem;
+    font-weight: bold;}
     
 ul{list-style: none
 ; color: #9f0000;padding: 1rem;}
@@ -45,24 +46,23 @@ ul{list-style: none
 ul li a{text-decoration: none;
 color: #9f0000;}
 
-.listaHead{display:flex;
+.listaHead{
+    display:flex;
     justify-content: space-between;
-padding-left: 2rem;
-text-align: center;}
+    padding-left: 2rem;
+    text-align: center;
+    margin-bottom: -2rem;
+    margin-top: -1.5rem;}
 
+.boton1{
+    margin-bottom: 2rem;
+    background-color: #9f0000;
+    display: inline-block;
+}
 li {
     display: inline-block;
     position:relative;}
 
- ul ul {
-    position: absolute;
-    display: none;
-    border:solid #9f0000;
-    padding: 1rem;
-    background-image:url(./Multimedia/aorus-logo.rgb.png);
-    background-color: white;
-    background-repeat: no-repeat;
-    background-position: left center;}
 
  ul ul li {
     display: block;
@@ -72,39 +72,63 @@ li {
     display:block;}
 
     .home{display: inline-block;
-        transition: all 0.4s ease;}
+        transition: all 0.4s ease;
+        margin-top: 1rem;}
         
-    .home:hover{background-color: black;
+    .home:hover{
         transform: scale(1.1,1.1);
         height: auto;
-        color: white;}
+        }
         
     .sobreNosotros{display: inline-block;
-        transition: all 0.4s ease;}
+        transition: all 0.4s ease;
+        margin-top: 1rem}
         
-    .sobreNosotros:hover{background-color: black;
+    .sobreNosotros:hover{
         transform: scale(1.1,1.1);
         height: auto;
-        color: white;}
+        }
         
         
     .contacto{display: inline-block;
-        transition: all 0.4s ease;}
+        transition: all 0.4s ease;
+        margin-top: 1rem;}
         
         
-    .contacto:hover{background-color: black;
+    .contacto:hover{
         transform: scale(1.1,1.1);
         height: auto;
-        color: white;}
+        }
         
         
-    .categorias{display:inline-block;
-        transition: all 0.4s ease;}
+    .categorias{
+        display:inline-block;
+        transition: all 0.4s ease;
+        color: #9f0000;
+        font-size: 2rem;
+    }
         
-    .categorias:hover{background-color: black;
+    .categorias:hover{
         transform: scale(1.1,1.1);
         height: auto;
-        color: white;}
+        ;}
+
+    .nav-item{
+        margin: auto;
+        margin-bottom: 2rem ;
+        font-size: 1.4rem;
+        transition: all 0.4s ease;
+        color: #9f0000;
+        }
+        
+    .nav-item:hover{
+        color: #9f0000;
+        transform: scale(1.1,1.1);
+        height: auto;
+        }
+    .btn-close{
+        margin-left: 1rem;
+    }
 
 
 /*Hasta aca va el Header*/
@@ -200,8 +224,9 @@ height: 29rem;}
 
 /*Hasta aca va el main*/
 .footer{background-color: white;
-padding: 2rem;
+padding: 1rem;
 grid-area: footer;
+margin-top: -4rem;
 }
 
 .listaFooter{display: flex;
