@@ -5,89 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red Shadows | Contacto</title>
+    <meta name="description" content="Empresa por y para Gamers que quieren cumplir el sueño de tener su Pc Gamer y disfrutar de este maravilloso mundo del entretenimiento">
+    <meta name="keywords" content="pc,monitores,comprar computadoras,tarjetas de video,mejores precio de pc,ofertas de pc,componentes de computadora,Red Shadows,">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="shortcut icon" href="./Multimedia/favicon-32x32.png">
     <link rel="stylesheet" href="estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gugi&family=Roboto:wght@100&family=Rubik+Mono+One&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Roboto:wght@100&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <div class="contenedorContacto">
-    <header class="header">
-        <nav class="navHead">
-            <h1> Red Shadows </h1>
-            <ul class="listaHead">
-                <li class="categorias">Categorias
-                    <ul>
-                        <li class="submenu"><a href="./EquiposArmados.html">Equipos armados</a></li>
-                        <li class="submenu"><a href="./Monitores.html">Monitores</a></li>
-                        <li class="submenu"><a href="./TarjetasDeVideo.html">Tarjetas de Video</a></li>
-                        <li class="submenu"><a href="./MicroProcesador.html">Microprocesadores</a></li>
-                        <li class="submenu"><a href="./PlacasMadre.html">Placas Madres</a></li>
-                        <li class="submenu"><a href="./MemoriasRam.html">Memorias RAM</a></li>
-                        <li class="submenu"><a href="./Fuentes.html">Fuentes</a></li>
-                        <li class="submenu"><a href="./Gabinetes.html">Gabinetes</a></li>
-                        <li class="submenu"><a href="./Perifericos.html">Perifericos</a></li>
-                    </ul>
-                <li class="sobreNosotros"><a href="sobrenosotros.html">Sobre Nosotros</a></li>
-                <li class="contacto"><a href="Contacto.html">Contacto</a></li>
-                <li class="home"><a href="index.html">Home</a></li>
-                </li>
-            </ul>
+        <header class="header">
+            <nav class="navHead ">
+                <h1> Red Shadows </h1>
+                <ul class="listaHead">
+                    <li><button class="boton1 navbar navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="boton navbar navbar-toggler-icon b"></span>
+                    </button></li>
+                    <li class="sobreNosotros"><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                    <li class="contacto"><a href="Contacto.html">Contacto</a></li>
+                    <li class="home"><a href="index.html">Home</a></li>
+                </ul>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header d-flex justify-content-center">
+                <h5 class="categorias offcanvas-title" id="offcanvasNavbarLabel">Categorias</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="fondoVentana offcanvas-body">
+                <ul class="navbar-nav ">
+                    <li class="nav-item"><a href="./EquiposArmados.html">Equipos armados</a></li>
+                    <li class="nav-item"><a href="./Monitores.html">Monitores</a></li>
+                    <li class="nav-item"><a href="./TarjetasDeVideo.html">Tarjetas de Video</a></li>
+                    <li class="nav-item"><a href="./MicroProcesador.html">Microprocesadores</a></li>
+                    <li class="nav-item"><a href="./PlacasMadre.html">Placas Madres</a></li>
+                    <li class="nav-item"><a href="./MemoriasRam.html">Memorias RAM</a></li>
+                    <li class="nav-item"><a href="./Fuentes.html">Fuentes</a></li>
+                    <li class="nav-item"><a href="./Gabinetes.html">Gabinetes</a></li>
+                    <li class="nav-item"><a href="./Perifericos.html">Perifericos</a></li>
+                </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <hr>
     <main class="main">
-            <h2 class="titulosContacto">
-                Contacto
-            </h2>
-            <form action="">
-            <div>
-                <label class="nombresContacto"  for="nombre">Nombre*</label>
-                <br>
-                <input  class="cajas" type="text"name="nombre"Placeholder="Juan" required>
-            </div>
+        <h2 class="titulosContacto">
+            Contacto
+        </h2>
+        <form action="">
+        <div>
+            <label class="nombresContacto"  for="nombre">Nombre*</label>
             <br>
-            <div>
-                <label class="nombresContacto" for="email">Email*</label>
-                <br>
-                <input class="cajas" type="email" name="email"Placeholder ="ejemplo@gmail.com" required>
-            </div>
+            <input  class="cajas" type="text"name="nombre"Placeholder="Juan" required>
+        </div>
+        <br>
+        <div>
+            <label class="nombresContacto" for="email">Email*</label>
             <br>
-            <div>
-                <label class="nombresContacto" for="number">Telefono</label>
-                <br>
-                <input class="cajas" type="number" name="Telefono"> 
-            </div>
+            <input class="cajas" type="email" name="email"Placeholder ="ejemplo@gmail.com" required>
+        </div>
+        <br>
+        <div>
+            <label class="nombresContacto" for="number">Telefono</label>
             <br>
-            <div>
-                <label class="nombresContacto" for="Asunto">Asunto</label>
-                <br>
-                <input class="cajas" type="text"name="Asunto">
-            </div>
+            <input class="cajas" type="number" name="Telefono"> 
+        </div>
+        <br>
+        <div>
+            <label class="nombresContacto" for="Asunto">Asunto</label>
             <br>
-            <div>
-                <label class="nombresContacto" for="Comentarios">Comentario</label>
-                <br>
-                <textarea class="cajas" name="comentarios" id="" cols="30" rows="10"></textarea>
-            <input class="enviar" type="submit" value="Enviar">
-            </div>
-            </form>
-        </main>
+            <input class="cajas" type="text"name="Asunto">
+        </div>
+        <br>
+        <div>
+            <label class="nombresContacto" for="Comentarios">Comentario</label>
+            <br>
+            <textarea class="cajas" name="comentarios" id="" cols="30" rows="10"></textarea>
+        <input class="enviar" type="submit" value="Enviar">
+        </div>
+        </form>
+    </main>
         <aside class="aside">
             <div class="contAside">
             <img class="imagenContacto" src="./Multimedia/Contacto.jpg" alt="Imagen contacto">
             </div>
         </aside>
-<hr>
-<footer class="footer">
-    <ul class="listaFooter">
-    <li class="copyright">Copyrigth</li>
-    <li class="logo">RS</li>
-    <li class="redesSociales">Whatsapp   Instagram   Facebook   Twitter</li>
-</ul>
-</footer>
+    <footer class="footer">
+            <ul class="listaFooter">
+            <li class="copyright">Copyrigth</li>
+            <li class="logo">RS</li>
+            <li class="redesSociales">Whatsapp   Instagram   Facebook   Twitter</li>
+        </ul>
+    </footer>
 </div>
+ <!-- JavaScript Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
