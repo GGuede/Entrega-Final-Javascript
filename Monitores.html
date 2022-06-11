@@ -51,9 +51,27 @@
         </header>
     <main class="main">
         <section>
-            <div class="divBanner">
-                <img class="animate__animated animate__zoomIn banner"src="./Multimedia/Banner.png" alt="Banner de pagina" >
-            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active banner">
+                    <img src="./Multimedia/banner4.jpg" class="w-50 h-20" alt="Banner de la pagina">
+                  </div>
+                  <div class="carousel-item banner">
+                    <img src="./Multimedia/banner6.png" class="w-50 h-20" alt="Banner de la pagina">
+                  </div>
+                <button class="carousel-control-prev botonIzq" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon botonIzq" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next botonDer" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon botonDer" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
         <section class="seccionOfertas">
             <div class="divOfertas">
