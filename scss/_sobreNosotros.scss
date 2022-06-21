@@ -1,0 +1,24 @@
+$colorPag:#9f0000;
+$colorFondo:#242424;
+
+ /*Sobre Nosotros*/
+.imagenSobreNosotros{
+    border-right: $colorPag solid;
+    width: 100%;
+    height: 100%;
+}
+.sobreNosotrosh2{color: $colorPag;
+    text-align: center;
+    display: inline-block;
+    margin: 3rem;
+    font-size: 3rem;
+}
+.pSobre{
+    text-align: center;
+    margin-left:2rem;
+    padding:2rem;
+    font-size: 1.6em;
+    height: 29rem;
+    color: white;
+}   
+/*Hasta aca va el Sobre Nosotros*/

@@ -1,0 +1,25 @@
+$colorPag:#9f0000;
+$colorFondo:#242424;
+
+.footer{
+    grid-column: 1;
+    grid-row: 3;
+    background-color: white;
+    padding: 2rem;
+    grid-area: footer;
+    margin-top: -4rem;
+    .listaFooter{
+        display: flex;
+        justify-content: space-between;
+        word-spacing: 1rem;
+        svg{
+            width: 2rem;
+            height: 2rem;
+            transition: all 0.4s ease;
+            &:hover{
+                transform: scale(1.1,1.1);
+            }
+        }
+    }
+}
+        /*Hasta aca va el footer*/  

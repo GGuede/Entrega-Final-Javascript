@@ -1,0 +1,123 @@
+$colorPag:#9f0000;
+$colorFondo:#242424;
+
+.main{
+    grid-row: 2;
+    grid-column: 1;
+    grid-area:main;
+    display: flex;
+    flex-direction: column;
+    .banner{
+        text-align: center;
+        }
+    .botonIzq{
+        margin-left: 10rem;
+    }
+    .botonDer{
+        margin-right: 10rem;
+        }
+    .seccionOfertas{
+        text-align: center;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-bottom: 5rem;
+        padding: 1rem;
+        .divOfertas{
+            text-align: center;
+            .ofertas{text-align: center;
+                margin: 2rem;
+                color: $colorPag;
+            }
+        }
+        .im{
+            margin: 1rem;
+            border: $colorPag solid;
+            transition: all 0.4s ease;
+            &:hover{
+                transform: scale(1.1,1.1);
+                height: auto;
+            }    
+        }  
+    } 
+    .tituloProducto{
+        color: $colorPag;
+        margin: 2.5rem;
+        margin-left: 8rem;
+    }   
+    .productoCate{
+        margin-left: 8rem;
+        a{
+            text-decoration: none;
+            color: $colorPag;
+        }
+        
+    }
+    .prodImagen{
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+    .imagenProducto{
+        display:inline-block;
+        margin: 2.5rem;
+        border: solid $colorPag;
+        margin-left: 4rem;
+        width: 28rem;
+        transition: all 0.4s;
+        object-fit: cover;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }   
+}
+}
+.prodAside{display:flex;
+    align-items: center;
+    margin:2rem;
+        .precio{
+            font-size: 2.2rem;
+        }
+    .agregarAlCarrito{
+        background-color: $colorPag;
+        width: 10rem;
+        height: 2.5rem;
+        transition: all 0.4s ease;
+        &:hover{
+            transform: scale(1.1,1.1);
+            }
+        }
+    
+    }
+
+.description{
+    grid-area: description;
+    .descripcion{
+        border: solid $colorPag;
+        margin: 4rem;
+        text-align: center;
+        color: $colorPag;
+    .tituloDescripcion{
+        text-align: center;
+        margin: 2rem;
+        color: $colorPag;
+        margin-left: 8rem;
+    }
+    .parrafoDescripcion{
+        color: white;
+        margin-bottom: 2rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+        .parrafoDescripcion2{
+        color: white;
+        margin: 1rem;
+        margin-bottom: 4rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        font-size: 1.1rem;
+        text-align: center;
+        }
+    }
+}
+         /*Hasta aca va el main*/
