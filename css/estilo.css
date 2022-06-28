@@ -318,13 +318,23 @@
   border: solid #9f0000;
 }
 
-.enviar {
+.divEnviar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.divEnviar .enviar {
   background-color: #9f0000;
-  margin-left: 50rem;
+  margin-left: 5rem;
   margin-bottom: 12rem;
   padding: 1rem;
   color: white;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .aside {
@@ -340,6 +350,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
 }
 
 .aside .contAside {
@@ -350,10 +361,8 @@
   border: solid #9f0000;
   border-radius: 30%;
   margin: 5rem;
-  margin-right: 6rem;
-  height: 100%;
+  height: 90%;
   width: 90%;
-  text-align: center;
 }
 
 /*contacto*/
@@ -369,14 +378,14 @@
   text-align: center;
   display: inline-block;
   margin: 3rem;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 .pSobre {
   text-align: center;
   margin-left: 2rem;
   padding: 2rem;
-  font-size: 1.6em;
+  font-size: 1.5rem;
   height: 29rem;
   color: white;
 }
@@ -418,8 +427,8 @@ body {
 .contenedorSobre {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 3fr 2fr;
-      grid-template-columns: 3fr 2fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto 8fr auto;
       grid-template-rows: auto 8fr auto;
       grid-template-areas: "header header" "main aside" "footer footer";
@@ -502,8 +511,8 @@ p {
   .contenedorContacto {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: auto auto 2fr auto;
-        grid-template-rows: auto auto 2fr auto;
+    -ms-grid-rows: auto 2fr auto auto;
+        grid-template-rows: auto 2fr auto auto;
         grid-template-areas: "header" "aside" "main" "footer";
   }
 }
