@@ -509,8 +509,16 @@ p {
         grid-template-areas: "header" "aside" "main" "footer";
   }
   .contenedorContacto .nombresContacto, .contenedorContacto .cajas {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-left: 2rem;
+  }
+  .contenedorContacto .divEnviar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .contenedorContacto .divEnviar .enviar {
     font-size: 0.5rem;
