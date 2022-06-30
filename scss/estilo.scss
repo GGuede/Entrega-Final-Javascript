@@ -96,6 +96,7 @@ p{
         "footer";
     }
 }
+
 @media screen and (max-width: 1024px){
     .contenedor{
         grid-template-columns: 1fr;
@@ -116,37 +117,8 @@ p{
         "aside"
         "main"
         "footer";
-        .nombresContacto{
-            font-size: 1.1rem;
-            margin-left: 2rem;
-        }
-        .divEnviar{
-            display: flex;
-            justify-content: center;
-            .enviar{
-                font-size: 0.5rem;
-                margin-right: 2rem;
-            }
-        }
     }
-
-        .aside{
-            .contAside{
-                .imagenContacto{
-                    height: 15rem;
-                    width: 15rem;
-                    }
-                }
-            }
-        .footer{
-            .listaFooter{
-                svg{
-                    width: 1.2rem;
-                    height: 1.2rem;
-                }
-            }
-        }    
-    }
+}
 
     
 @media screen and (max-width: 1024px){

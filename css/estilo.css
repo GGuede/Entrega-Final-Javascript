@@ -508,30 +508,6 @@ p {
         grid-template-rows: auto auto 2fr auto;
         grid-template-areas: "header" "aside" "main" "footer";
   }
-  .contenedorContacto .nombresContacto, .contenedorContacto .cajas {
-    font-size: 1.1rem;
-    margin-left: 2rem;
-  }
-  .contenedorContacto .divEnviar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .contenedorContacto .divEnviar .enviar {
-    font-size: 0.5rem;
-    margin-right: 2rem;
-  }
-  .aside .contAside .imagenContacto {
-    height: 15rem;
-    width: 15rem;
-  }
-  .footer .listaFooter svg {
-    width: 1.2rem;
-    height: 1.2rem;
-  }
 }
 
 @media screen and (max-width: 1024px) {
