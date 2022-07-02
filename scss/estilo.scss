@@ -101,8 +101,7 @@ p{
                 .w-50{
                     width: 90%!important;
                     margin-left: 1.3rem;
-                }
-                
+                }  
             }
             .botonIzq{
                 margin-left: 0rem;
@@ -128,6 +127,7 @@ p{
         "footer";
     }
 }
+
 @media screen and (max-width: 480px){
     .contenedorContacto{
         grid-template-columns: 1fr;
@@ -170,7 +170,6 @@ p{
     }
 }
 
-    
 @media screen and (max-width: 1024px){
     .contenedorContacto{
         grid-template-columns: 1fr;
