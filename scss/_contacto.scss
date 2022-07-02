@@ -3,35 +3,36 @@ $colorFondo:#242424;
 
 
 
-.titulosContacto{
-    color: $colorPag;
-    margin:1rem;
-    padding: 1rem;
-    text-align: center;
-    font-size: 2rem;}
-.nombresContacto{ 
-    color: $colorPag;
-    margin:1rem;
-    margin-left: 10rem;
-    padding: 1rem;
-    font-size: 2rem;
-    display: block}
-.cajas{
-    @extend .nombresContacto;
-    border:solid $colorPag;
-    width: auto;
-   }
-.divEnviar{
-    display: flex;
-    justify-content: end;
-    .enviar{
-    background-color: $colorPag;
-    text-align: center;
-    margin-bottom: 12rem;
-    padding: 1rem;
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
+    .titulosContacto{
+        color: $colorPag;
+        margin:1rem;
+        padding: 1rem;
+        text-align: center;
+        font-size: 2rem;}
+form{
+    align-self: center;
+    .nombresContacto{ 
+        color: $colorPag;
+        margin:1rem;
+        padding: 1rem;
+        font-size: 2rem;
+        display: block}
+    .cajas{
+        @extend .nombresContacto;
+        border:solid $colorPag;
+        width: auto;
+        }
+    .divEnviar{
+        display: flex;
+        justify-content: end;
+        .enviar{
+            background-color: $colorPag;
+            text-align: center;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            color: white;
+            font-size: 1.5rem;
+        }
     }
 }
 .aside{

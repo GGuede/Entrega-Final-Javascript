@@ -120,8 +120,6 @@
 
 .main .seccionOfertas {
   text-align: center;
-  margin-left: 10rem;
-  margin-right: 10rem;
   margin-bottom: 5rem;
   padding: 1rem;
 }
@@ -226,11 +224,13 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: description;
+  margin: auto;
 }
 
 .description .descripcion {
+  max-width: 80rem;
   border: solid #9f0000;
-  margin: 4rem;
+  margin: 1rem 1rem;
   text-align: center;
   color: #9f0000;
 }
@@ -271,10 +271,12 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: footer;
-  margin-top: -4rem;
 }
 
 .footer .listaFooter {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,21 +307,26 @@
   font-size: 2rem;
 }
 
-.nombresContacto, .cajas {
+form {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+form .nombresContacto, form .cajas {
   color: #9f0000;
   margin: 1rem;
-  margin-left: 10rem;
   padding: 1rem;
   font-size: 2rem;
   display: block;
 }
 
-.cajas {
+form .cajas {
   border: solid #9f0000;
   width: auto;
 }
 
-.divEnviar {
+form .divEnviar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,14 +335,13 @@
           justify-content: end;
 }
 
-.divEnviar .enviar {
+form .divEnviar .enviar {
   background-color: #9f0000;
   text-align: center;
-  margin-bottom: 12rem;
+  margin-bottom: 1rem;
   padding: 1rem;
   color: white;
   font-size: 1.5rem;
-  text-align: center;
 }
 
 .aside {
@@ -442,8 +448,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto 8fr 5fr auto;
-      grid-template-rows: auto 8fr 5fr auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
       grid-template-areas: "header header" "main aside" "description description" "footer footer";
 }
 
@@ -508,6 +514,12 @@ p {
         grid-template-rows: auto auto 2fr auto;
         grid-template-areas: "header" "aside" "main" "footer";
   }
+  .contenedorContacto main form .nombreContacto {
+    font-size: 2rem;
+  }
+  .contenedorContacto main .aside .conAside .imagenContacto {
+    width: 21rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -544,9 +556,16 @@ p {
   .contenedorProducto {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: auto 2fr auto auto auto;
-        grid-template-rows: auto 2fr auto auto auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
         grid-template-areas: "header" "main" "aside" "description" "footer";
+  }
+  .contenedorProducto main section .prodImagen .imagenProducto {
+    width: 21rem;
+    margin: 1rem;
+  }
+  .contenedorProducto .footer .listaFooter svg {
+    width: 1.3rem;
   }
 }
 

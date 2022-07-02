@@ -18,8 +18,8 @@ $colorFondo:#242424;
         }
     .seccionOfertas{
         text-align: center;
-        margin-left: 10rem;
-        margin-right: 10rem;
+        
+        
         margin-bottom: 5rem;
         padding: 1rem;
         .divOfertas{
@@ -91,9 +91,11 @@ $colorFondo:#242424;
 
 .description{
     grid-area: description;
+    margin: auto;
     .descripcion{
+        max-width: 80rem;
         border: solid $colorPag;
-        margin: 4rem;
+        margin: 1rem 1rem;
         text-align: center;
         color: $colorPag;
     .tituloDescripcion{

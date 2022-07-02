@@ -7,8 +7,8 @@ $colorFondo:#242424;
     background-color: white;
     padding: 2rem;
     grid-area: footer;
-    margin-top: -4rem;
     .listaFooter{
+        align-items: center;
         display: flex;
         justify-content: space-between;
         word-spacing: 1rem;
