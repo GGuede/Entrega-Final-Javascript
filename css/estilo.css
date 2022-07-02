@@ -521,6 +521,7 @@ p {
         grid-template-areas: "header" "aside" "main" "footer";
   }
   .contenedorContacto main form .nombresContacto, .contenedorContacto main form .cajas {
+    font-size: 1.8rem;
     margin: 0rem;
     padding: 0rem;
   }
