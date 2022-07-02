@@ -520,6 +520,9 @@ p {
         grid-template-rows: auto auto 2fr auto;
         grid-template-areas: "header" "aside" "main" "footer";
   }
+  .contenedorContacto main form {
+    width: 18rem;
+  }
   .contenedorContacto main form .nombresContacto, .contenedorContacto main form .cajas {
     font-size: 1.8rem;
     margin: 0rem;
@@ -528,6 +531,7 @@ p {
   .contenedorContacto main form .cajas {
     margin: 0rem;
     padding: 0rem;
+    width: 100%;
   }
   .contenedorContacto main form .divEnviar {
     -webkit-box-pack: center;
