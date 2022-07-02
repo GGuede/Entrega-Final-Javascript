@@ -94,6 +94,15 @@ p{
         "header"
         "main"
         "footer";
+
+        main{
+            .banner{
+                width: 23rem;
+            }
+        }
+        .footer .listaFooter svg {
+            width: 1.3rem;
+        }
     }
 }
 
@@ -117,22 +126,32 @@ p{
         "aside"
         "main"
         "footer";
-    main{
-        form{
-            .nombreContacto{
-                font-size: 2rem;
-            }
-
-        }
-        .aside{
-            .conAside{
-                .imagenContacto{
-                    width: 21rem;
-
+        main{
+            form{
+                .nombreContacto{
+                    font-size: 1.8rem;
+                    margin: 0rem;
+                }
+                .cajas{
+                    margin: 0rem;
+                }
+                .divEnviar{
+                    justify-content: center;
+                    margin-top: 1rem;
                 }
             }
         }
-    }
+        .aside{
+            .contAside{
+                .imagenContacto{
+                    width: 21rem;
+                    height: 21rem;      
+                }    
+            }
+        }
+        .footer .listaFooter svg {
+            width: 1.3rem;
+        }
     }
 }
 
@@ -170,6 +189,9 @@ p{
         "aside"
         "main"
         "footer";
+        .footer .listaFooter svg {
+            width: 1.3rem;
+        }
     }
 }
 @media screen and(max-width:480px){
@@ -208,5 +230,6 @@ p{
         "aside"
         "description"
         "footer";
+        
     }
 }

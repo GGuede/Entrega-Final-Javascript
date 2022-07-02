@@ -494,6 +494,12 @@ p {
         grid-template-rows: auto 1fr auto;
         grid-template-areas: "header" "main" "footer";
   }
+  .contenedor main .banner {
+    width: 23rem;
+  }
+  .contenedor .footer .listaFooter svg {
+    width: 1.3rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -515,10 +521,24 @@ p {
         grid-template-areas: "header" "aside" "main" "footer";
   }
   .contenedorContacto main form .nombreContacto {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin: 0rem;
   }
-  .contenedorContacto main .aside .conAside .imagenContacto {
+  .contenedorContacto main form .cajas {
+    margin: 0rem;
+  }
+  .contenedorContacto main form .divEnviar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 1rem;
+  }
+  .contenedorContacto .aside .contAside .imagenContacto {
     width: 21rem;
+    height: 21rem;
+  }
+  .contenedorContacto .footer .listaFooter svg {
+    width: 1.3rem;
   }
 }
 
@@ -549,6 +569,9 @@ p {
     -ms-grid-rows: auto auto 2fr auto;
         grid-template-rows: auto auto 2fr auto;
         grid-template-areas: "header" "aside" "main" "footer";
+  }
+  .contenedorSobre .footer .listaFooter svg {
+    width: 1.3rem;
   }
 }
 
