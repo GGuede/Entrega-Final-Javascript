@@ -98,6 +98,17 @@ p{
         main{
             .banner{
                 width: 23rem;
+                .w-50{
+                    width: 90%!important;
+                    margin-left: 1.3rem;
+                }
+                
+            }
+            .botonIzq{
+                margin-left: 0rem;
+            }
+            .botonDer{
+                margin-right: 0rem;
             }
         }
         .footer .listaFooter svg {

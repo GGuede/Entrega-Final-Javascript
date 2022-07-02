@@ -497,6 +497,16 @@ p {
   .contenedor main .banner {
     width: 23rem;
   }
+  .contenedor main .banner .w-50 {
+    width: 90% !important;
+    margin-left: 1.3rem;
+  }
+  .contenedor main .botonIzq {
+    margin-left: 0rem;
+  }
+  .contenedor main .botonDer {
+    margin-right: 0rem;
+  }
   .contenedor .footer .listaFooter svg {
     width: 1.3rem;
   }
