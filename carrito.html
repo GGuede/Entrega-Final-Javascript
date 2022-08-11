@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Shadows | Equipos Armados</title>
-    <meta name="description" content="Equipos diseñados para Gaming y trabajo a tu medida">
-    <meta name="keywords" content="pc,monitores,comprar computadoras,tarjetas de video,mejores precio de pc,ofertas de pc,componentes de computadora,Red Shadows,">
+    <meta name="description" content="Empresa por y para Gamers que quieren cumplir el sueño de tener su Pc Gamer y disfrutar de este maravilloso mundo del entretenimiento">
+    <meta name="keywords" content="pc,monitores,comprar computadoras,tarjetas de video,mejores precio de pc,ofertas de pc,componentes de computadora,Red Shadows,Microprocesadores,PlacasMadre,,MemoriasRam,Fuentes,Gabinetes">
+    <title>Red Shadows</title>
+    <meta name="description" content="Empresa por y para Gamers que quieren cumplir el sueño de tener su Pc Gamer y disfrutar de este maravilloso mundo del entretenimiento">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="shortcut icon" href="./Multimedia/favicon-32x32.png">
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Roboto:wght@100&family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <script src="./app.js"defer></script>
+    <link rel="stylesheet"defer href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
   <div class="contenedor">
@@ -24,14 +27,17 @@
           <li><button class="boton1 navbar navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="boton navbar navbar-toggler-icon b"></span>
           </button></li>
-          <li class="sobreNosotros"><a href="./sobrenosotros.html">Sobre Nosotros</a></li>
+          
           <li class="contacto"><a href="./Contacto.html">Contacto</a></li>
           <li class="home"><a href="index.html">Home</a></li>
+          <li><a href="./carrito.html"><svg id="botonCarrito"xmlns="http://www.w3.org/2000/svg" width="14" height="16" fill="currentColor" class="bi bi-cart-fill botonCarrito" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg></a></li>
         </ul>
         <div class="offcanvas offcanvas-start menu" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header d-flex justify-content-center">
             <h5 class="categorias offcanvas-title" id="offcanvasNavbarLabel">Categorías</h5>
-            <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close bg-light " data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="fondoVentana offcanvas-body">
             <ul class="navbar-nav ">
@@ -51,45 +57,32 @@
     </header>
     <main class="main">
       <section>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active banner">
-              <img src="./Multimedia/banner4.jpg" class="w-50 h-20" alt="Banner de la pagina">
-            </div>
-            <div class="carousel-item banner">
-              <img src="./Multimedia/banner6.png" class="w-50 h-20" alt="Banner de la pagina">
-            </div>
-          <button class="carousel-control-prev botonIzq" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon botonIzq" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next botonDer" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon botonDer" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-      <section class="seccionOfertas">
-        <div class="divOfertas">
-          <h2 class="ofertas">
-            Equipos Armados
-          </h2>
-        </div>
-        <div class="imagenesPC"> 
-          <a href="./EquiposArmados1.html"><img class="im" src="./Multimedia/EquiposArmados1.png" alt="Equipo Intel Dualcore G5905"></a>
-          <a href="./EquiposArmados2.html"><img class="im" src="./Multimedia/EquiposArmados2.jpg" alt="Equipo AMD Ryzen 7 5800X Full Gamer"></a>
-          <a href="./EquiposArmados3.html"><img class="im" src="./Multimedia/EquiposArmados3.jpg" alt="Equipo AMD Ryzen 5 5600G"></a>
-          <a href="./EquiposArmados4.html"><img class="im" src="./Multimedia/EquiposArmados4.jpg" alt="Equipo AMD Ryzen 5 4500 Pro Gamer con RX6500XT"></a>
-        </div>
-        <div class="imagenesPC">
-          <a href="./EquiposArmados5.html"><img class="im" src="./Multimedia/EquiposArmados5.jpg" alt="Fuente EVGA 500BA 80 Plus Bronze"></a>
-          <a href="./EquiposArmados6.html"><img class="im" src="./Multimedia/EquiposArmados6.jpg" alt="Equipo Intel Core I5 11400f Pro Gamer -16Gb 3200mhz - SSD - RX6500XT"></a>
-          <a href="./EquiposArmados7.html"><img class="im" src="./Multimedia/EquiposArmados7.jpg" alt="Equipo INTEL Core I3 12100F"></a>
-          <a href="./EquiposArmados8.html"><img class="im" src="./Multimedia/EquiposArmados8.jpg" alt="Equipo AMD Ryzen 5 5500 Full Gamer"></a>
+        <div>
+            <h3>
+                Finaliza tu compra
+            </h3>
+            <form class="formularioCarrito">
+              <div>
+                <label class="nombresDeForm"for="nombre">Nombre</label>
+                <input class="form-control" id="input-nombre" type="text" placeholder="Nombre">
+              </div>
+              <div>
+                <label class="nombresDeForm" for="email">Email</label>
+                <input class="form-control" id="input-email" type="email" placeholder="Email">
+              </div>
+              <div>
+                <label class="nombresDeForm" for="telefono">Telefono</label>
+                <input class="form-control" id="input-telefono" type="number" placeholder="Telefono">
+              </div>    
+              <div>
+                <label class="nombresDeForm" for="cuotas">Cantidad de Cuotas</label>
+                <select class="form-control" id="cuotas" placeholder="Cuotas">
+                  <option value="">1 Pagos de $</option>
+                  <option value="">3 Pagos de $</option>
+                  <option value="">6 Pagos de $</option>
+                  <option value="">12 Pagos de $</option>
+              </div>           
+              </form>
         </div>
       </section>
     </main>
@@ -111,7 +104,7 @@
         </svg></a></li>
       </ul>
     </footer>
-  </div> <a href=""></a>
+  </div>
    <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

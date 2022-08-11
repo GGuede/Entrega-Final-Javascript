@@ -90,6 +90,12 @@
   height: auto;
 }
 
+
+.botonCarrito{
+  width: 2rem;
+  height: 2rem;
+   
+ }
 /*Hasta aca va el Header*/
 .main {
   grid-row: 2;
@@ -298,6 +304,45 @@
           transform: scale(1.1, 1.1);
 }
 
+
+.container-modal{
+  background-color: #1a1a1a;
+  width: 40rem;
+  align-self: center;
+  text-align: center;
+  display: inline-block;
+  border-top: solid #9f0000;
+  margin-top: 1rem;
+  opacity: 0;
+  visibility: hidden;
+}
+.mymodal{
+ font-size: 1rem;
+ display: inline-block;
+ margin-right: 2rem;
+ width: auto;
+  
+}
+.myBoton{
+ display: inline-block;
+ margin-left: 3rem;
+ background-color: rgb(202, 203, 204);
+ color: #9f0000;
+ margin-top: 0.5rem;
+
+}
+.container-modal-active{
+  opacity: 1;
+  visibility: visible;
+}
+.formularioCarrito{
+  max-width: 30rem;
+  
+}
+.nombresDeForm{
+  color: #9f0000;
+}
+
 /*Hasta aca va el footer*/
 .titulosContacto {
   color: #9f0000;
@@ -420,7 +465,9 @@ body {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto 8fr auto;
       grid-template-rows: auto 8fr auto;
-      grid-template-areas: "header header" "main main" "footer footer";
+      grid-template-areas: "header header"
+ "main main"
+ "footer footer";
 }
 
 .contenedorContacto {
@@ -430,7 +477,9 @@ body {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto 8fr auto;
       grid-template-rows: auto 8fr auto;
-      grid-template-areas: "header header" "main aside" "footer footer";
+      grid-template-areas: "header header"
+ "main aside"
+ "footer footer";
 }
 
 .contenedorSobre {
@@ -440,7 +489,9 @@ body {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto 8fr auto;
       grid-template-rows: auto 8fr auto;
-      grid-template-areas: "header header" "main aside" "footer footer";
+      grid-template-areas: "header header"
+ "main aside"
+ "footer footer";
 }
 
 .contenedorProducto {
@@ -450,8 +501,12 @@ body {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-      grid-template-areas: "header header" "main aside" "description description" "footer footer";
+      grid-template-areas: "header header"
+ "main aside"
+ "description description"
+ "footer footer";
 }
+
 
 h1 {
   color: #9f0000;
@@ -492,7 +547,9 @@ p {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto 1fr auto;
         grid-template-rows: auto 1fr auto;
-        grid-template-areas: "header" "main" "footer";
+        grid-template-areas: "header"
+ "main"
+ "footer";
   }
   .contenedor main .banner {
     width: 23rem;
@@ -518,7 +575,10 @@ p {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto 1fr auto;
         grid-template-rows: auto 1fr auto;
-        grid-template-areas: "header" "aside" "main" "footer";
+        grid-template-areas: "header"
+ "aside"
+ "main"
+ "footer";
   }
 }
 
@@ -528,7 +588,10 @@ p {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto auto 2fr auto;
         grid-template-rows: auto auto 2fr auto;
-        grid-template-areas: "header" "aside" "main" "footer";
+        grid-template-areas: "header"
+ "aside"
+ "main"
+ "footer";
   }
   .contenedorContacto main form {
     width: 18rem;
@@ -564,7 +627,10 @@ p {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto auto 2fr auto;
         grid-template-rows: auto auto 2fr auto;
-        grid-template-areas: "header" "aside" "main" "footer";
+        grid-template-areas: "header"
+ "aside"
+ "main"
+ "footer";
   }
 }
 
@@ -574,7 +640,10 @@ p {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto auto 2fr auto;
         grid-template-rows: auto auto 2fr auto;
-        grid-template-areas: "header" "aside" "main" "footer";
+        grid-template-areas: "header"
+ "aside"
+ "main"
+ "footer";
   }
 }
 
@@ -584,7 +653,10 @@ p {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto auto 2fr auto;
         grid-template-rows: auto auto 2fr auto;
-        grid-template-areas: "header" "aside" "main" "footer";
+        grid-template-areas: "header"
+ "aside"
+ "main"
+ "footer";
   }
   .contenedorSobre .footer .listaFooter svg {
     width: 1.3rem;
@@ -597,7 +669,11 @@ p {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: "header" "main" "aside" "description" "footer";
+        grid-template-areas: "header"
+ "main"
+ "aside"
+ "description"
+ "footer";
   }
   .contenedorProducto main section .prodImagen .imagenProducto {
     width: 21rem;
@@ -614,6 +690,10 @@ p {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto 2fr auto auto auto;
         grid-template-rows: auto 2fr auto auto auto;
-        grid-template-areas: "header" "main" "aside" "description" "footer";
+        grid-template-areas: "header"
+ "main"
+ "aside"
+ "description"
+ "footer";
   }
 }
