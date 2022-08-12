@@ -1,6 +1,7 @@
 //--------------------------------Arrays---------------------------------------//
 let Monitores = []
-let Carrito =[]
+let Carrito = []
+
 
 //--------------------------------Constructor----------------------------------//
 class Monitor {
@@ -38,6 +39,35 @@ Monitores.push(monitor6)
 const productos = document.querySelector('#imagenesPC')
 
 const  contenedorCarrito = document.getElementById('container-modal')
+
+const interiorDelCarro = document.getElementById('modal')
+
+const botonVaciar = document.getElementById('botonVaciar')
+
+const contadorCarrito = document.getElementById('contadorCarrito')
+
+const precioTotal = document.getElementById('precioTotal')
+
+const abrirModal = document.getElementById('abrirModal')
+
+const cerrarModal = document.getElementById('cerrarModal')
+
+
+botonVaciar.addEventListener(`click` , () => {
+  Carrito.length = 0
+  actualizarCarrito()
+})
+
+abrirModal.addEventListener(`click` , () => {
+contenedorCarrito.classList.add('container-modal-active')
+})
+
+cerrarModal.addEventListener(`click` , () => {
+  contenedorCarrito.classList.remove('container-modal-active')
+})
+
+
+
 Monitores.forEach(producto => {
     const div = document.createElement('div')
     div.innerHTML = `<h4 class="text-danger">${producto.nombre}</h4>
@@ -46,32 +76,34 @@ Monitores.forEach(producto => {
 
         productos.appendChild(div)
     
-        const boton = document.getElementById('agregar${producto.id}')
+    const boton = document.getElementById(`agregar${producto.id}`)
 
-        boton.addEventListener('click', () => {
-          agregarAlCarrito(producto.id)
-        })
+    boton.addEventListener(`click` , () => {
+      agregarAlCarrito(producto.id)
+    })
 })
-
-const agregarAlCarrito = (prodId) => {
-  const item = Monitores.find((prod) => prod.id === prodId)
+const agregarAlCarrito =(prodId) => {
+  const item = Monitores.find ((prod) => prod.id === prodId)
   Carrito.push(item)
   actualizarCarrito()
+  console.log(Carrito)
 }
-
-console.log(Carrito)
 
 const actualizarCarrito = () => {
+  
+  
+    Carrito.forEach((prod) => {
+      const div = document.createElement('div')
+      div.className = ('productoEnCarrito')
+      div.innerHTML = `
+      <p>${prod.nombre}</p>
+      <p>Precio: $${prod.precio}</p>
+      `
+  
+      interiorDelCarro.appendChild(div)
+  
+      localStorage.setItem('carrito' , JSON.stringify(Carrito))
+    })
+  }
 
-  Carrito.forEach(() => {
-    const div = document.createElement('div')
-    div.className = ('productoEnCarrito')
-    div.innerHTML = `
-    <p>${prod.nombre}</p>
-    <p>Precio: ${prod.precio}</p>
-    <p>Cantidad: <span id ="cantidad">${prod.cantidad}</span></p>
-    <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar">`
-
-    contenedorCarrito.appendChild(div)
-  })
-}
+  
