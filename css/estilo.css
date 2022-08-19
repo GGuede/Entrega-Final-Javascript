@@ -7,6 +7,9 @@
   -ms-grid-column-span: 2;
   grid-area: header;
 }
+.headerActive{
+  background-color: black;
+}
 
 .header .listaHead {
   display: -webkit-box;
@@ -90,10 +93,14 @@
   height: auto;
 }
 
-
+.numeroCarrito{
+  color: #9f0000;
+}
 .botonCarrito{
   width: 2rem;
   height: 2rem;
+  color: #9f0000;
+  border-radius: solid #9f0000;
    
  }
 /*Hasta aca va el Header*/
@@ -266,7 +273,27 @@
   font-size: 1.1rem;
   text-align: center;
 }
+.divBotonDark{
+  display: flex;
+  justify-content: end;
+}
+.botonDark{
+  width: 3.4rem;
+  height: 3.4rem;
+  background-color: black;
+  color: #9f0000;
 
+}
+.claseProducto{
+  display: inline-block;
+}
+
+.boton-eliminar{
+  width: 5rem;
+  height: 2rem;
+  color: #9f0000;
+  margin-bottom: 1rem;
+}
 /*Hasta aca va el main*/
 .footer {
   grid-column: 1;
@@ -279,6 +306,9 @@
   grid-area: footer;
 }
 
+.footerActive{
+  background-color: black;
+}
 .footer .listaFooter {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -304,7 +334,6 @@
           transform: scale(1.1, 1.1);
 }
 
-
 .container-modal{
   background-color: rgb(0, 0, 0, 0.3);
   width: 100%;
@@ -315,8 +344,6 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  
-  
   opacity: 0;
   visibility: hidden;
 }
@@ -327,14 +354,16 @@
  padding: 20px;
 border-radius: 20px;
 border-radius:solid #9f0000;
+
   
 }
 .myBoton{
- 
- background-color: rgb(202, 203, 204);
+ background-color: black;
  color: #9f0000;
-
-
+ transition: all 0.4s ease;
+}
+.myBoton:hover{
+  transform: scale(1.1,1.1);
 }
 .cerrarCarrito{
   width: 8rem;
@@ -351,6 +380,11 @@ border-radius:solid #9f0000;
 .nombresDeForm{
   color: #9f0000;
 }
+.productoEnCarrito{
+  background-color: rgb(85, 81, 81);
+  
+}
+
 
 /*Hasta aca va el footer*/
 .titulosContacto {
@@ -467,6 +501,9 @@ body {
   text-transform: capitalize;
 }
 
+.bodyActive{
+  background-color: white;
+}
 .contenedor {
   display: -ms-grid;
   display: grid;

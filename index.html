@@ -14,13 +14,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Roboto:wght@100&family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    
+    <script src="./card_widget.js" defer></script>
     <script src="./app.js"defer></script>
     <link rel="stylesheet"defer href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body>
+<body id="body"class="">
   <div class="contenedor">
-    <header class="header">
+    <header id="header" class="header">
       <nav class="navHead ">
         <h1> Red Shadows </h1>
         <ul class="listaHead">
@@ -29,9 +29,9 @@
           </button></li>
           <li class="contacto">contacto</li>
           <li class="home"><a href="index.html">Home</a></li>
-          <li><button id="abrirModal" class="myboton"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" fill="currentColor" class="bi bi-cart-fill botonCarrito" viewBox="0 0 16 16">
+          <li><button id="abrirModal" class="myBoton"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" fill="currentColor" class="bi bi-cart-fill botonCarrito" viewBox="0 0 16 16">
             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-          </svg></button></li>
+          </svg><span id="contadorCarrito" class=>0</span></button></li>
         </ul>
         <div class="offcanvas offcanvas-start menu" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header d-flex justify-content-center">
@@ -79,17 +79,24 @@
         </div>
       </section>
       <section>
+        <div class="divBotonDark">
+          <button id="botonDark"class="botonDark">
+            Modo Dark
+          </button>
+        </div>
       <div id="container-modal"class="container-modal">
         <div id="modal" class="mymodal">
           <h3>
             Carrito
           </h3>
-          <button id="cerrarModal" class="cerrarCarrito">
-            Cerrar Carrito
-          </button>
+          
           <div id="contenedorCarrito"class="contenedorCarrito">
           </div>
-         <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+         
+          <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+         <button id="cerrarModal" class="cerrarCarrito">
+          Cerrar Carrito
+        </button>
          <button id="botonVaciar" class="cerrarCarrito">vaciar carrito</button> 
         </div>
       </div>
@@ -104,7 +111,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <ul class="listaFooter">
         <li class="copyright">Copyright</li>
         <li class="logo">RS</li>
