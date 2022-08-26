@@ -14,7 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Roboto:wght@100&family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    <script src="./card_widget.js" defer></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./app.js"defer></script>
     <link rel="stylesheet"defer href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
@@ -55,29 +57,7 @@
       </nav>
     </header>
     <main class="main">
-      <section>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active banner">
-              <img src="./Multimedia/banner4.jpg" class="w-50 h-20" alt="Banner de la pagina">
-            </div>
-            <div class="carousel-item banner">
-              <img src="./Multimedia/banner6.png" class="w-50 h-20" alt="Banner de la pagina">
-            </div>
-          <button class="carousel-control-prev botonIzq" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon botonIzq" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next botonDer" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon botonDer" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
+      
       <section>
         <div class="divBotonDark">
           <button id="botonDark"class="botonDark">
@@ -92,12 +72,16 @@
           
           <div id="contenedorCarrito"class="contenedorCarrito">
           </div>
-         
+          <div class="botonesModal">
           <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
-         <button id="cerrarModal" class="cerrarCarrito">
-          Cerrar Carrito
-        </button>
+          <button id="confirmarCompra" class="cerrarCarrito">
+            Confirmar 
+          </button>
+          <button id="cerrarModal" class="cerrarCarrito">
+            Cerrar 
+          </button>
          <button id="botonVaciar" class="cerrarCarrito">vaciar carrito</button> 
+          </div>
         </div>
       </div>
       </section>

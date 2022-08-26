@@ -287,7 +287,9 @@
 .claseProducto{
   display: inline-block;
 }
-
+.clasePrecioActive{
+color: black;
+}
 .boton-eliminar{
   width: 5rem;
   height: 2rem;
@@ -354,6 +356,8 @@
  padding: 20px;
 border-radius: 20px;
 border-radius:solid #9f0000;
+z-index: 1;
+position: absolute;
 
   
 }
@@ -366,7 +370,7 @@ border-radius:solid #9f0000;
   transform: scale(1.1,1.1);
 }
 .cerrarCarrito{
-  width: 8rem;
+  width: 7.5rem;
   color: #9f0000;
 }
 .container-modal-active{
@@ -385,7 +389,13 @@ border-radius:solid #9f0000;
   
 }
 
-
+.confirmar{
+  color: white;
+  text-decoration: none;
+}
+.confirmar:hover{
+  color: white;
+}
 /*Hasta aca va el footer*/
 .titulosContacto {
   color: #9f0000;
