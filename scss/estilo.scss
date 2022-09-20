@@ -17,8 +17,12 @@ body{
     background-color: $colorFondo;
     font-family:'Gugi', cursive;
     text-transform: capitalize;
+    transition: .3s ease all;
     }
+.bodyActive{
+    background-color: white;
     
+      }
 .contenedor{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -28,33 +32,6 @@ body{
     "main main"
     "footer footer";}
             
-.contenedorContacto{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 8fr auto;
-    grid-template-areas:
-    "header header"
-    "main aside"
-    "footer footer";}
-    
-.contenedorSobre{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 8fr auto;
-        grid-template-areas:
-    "header header"
-    "main aside"
-    "footer footer";}
-
-.contenedorProducto{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "header header"
-    "main aside"
-    "description description"
-    "footer footer";}
         
 h1{
     color: $colorPag;
@@ -128,122 +105,5 @@ p{
     }
 }
 
-@media screen and (max-width: 480px){
-    .contenedorContacto{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto 2fr auto;
-        grid-template-areas:
-        "header"
-        "aside"
-        "main"
-        "footer";
-        main{
-            form{
-                width:  18rem;
-                .nombresContacto{
-                    font-size: 1.8rem;
-                    margin: 0rem;
-                    padding: 0rem;
-                }
-                .cajas{
-                    margin: 0rem;
-                    padding: 0rem;
-                    width: 100%;
-                }
-                .divEnviar{
-                    justify-content: center;
-                    margin-top: 1rem;
-                }
-            }
-        }
-        .aside{
-            .contAside{
-                .imagenContacto{
-                    width: 21rem;
-                    height: 21rem;      
-                }    
-            }
-        }
-        .footer .listaFooter svg {
-            width: 1.3rem;
-        }
-    }
-}
 
-@media screen and (max-width: 1024px){
-    .contenedorContacto{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto 2fr auto;
-        grid-template-areas:
-        "header"
-        "aside"
-        "main"
-        "footer";
-    }
-}
-    
-@media screen and (max-width: 1100px){
-    .contenedorSobre{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto 2fr auto;
-        grid-template-areas:
-        "header"
-        "aside"
-        "main"
-        "footer";
-    }
-}
-    
-@media screen and (max-width: 480px){
-    .contenedorSobre{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto 2fr auto;
-        grid-template-areas:
-        "header"
-        "aside"
-        "main"
-        "footer";
-        .footer .listaFooter svg {
-            width: 1.3rem;
-        }
-    }
-}
-@media screen and(max-width:480px){
-    .contenedorProducto{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto ;
-        grid-template-areas: 
-        "header"
-        "main"
-        "aside"
-        "description"
-        "footer";
-        main{
-            section{
-                .prodImagen{
-                    .imagenProducto{
-                        width: 21rem;
-                        margin: 1rem ;
-                    }
-                }
-            }
 
-        }
-        .footer .listaFooter svg {
-            width: 1.3rem;
-        }
-    }
-}
-@media screen and(max-width:1024px){
-    .contenedorProducto{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 2fr auto auto auto;
-        grid-template-areas: 
-        "header"
-        "main"
-        "aside"
-        "description"
-        "footer";
-        
-    }
-}

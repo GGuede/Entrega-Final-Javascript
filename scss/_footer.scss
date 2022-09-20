@@ -1,6 +1,7 @@
 $colorPag:#9f0000;
 $colorFondo:#242424;
 
+
 .footer{
     grid-column: 1;
     grid-row: 3;
@@ -22,4 +23,8 @@ $colorFondo:#242424;
         }    
     }
 }
+.footerActive{
+    background-color: black;
+  }
+  
         /*Hasta aca va el footer*/  

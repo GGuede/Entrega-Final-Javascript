@@ -1,0 +1,41 @@
+.divTituloFormulario{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    .tituloFormulario{
+        color: #9f0000;
+        font-size: 3rem;
+        
+      }
+  }
+.divFormularioCarrito{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    .formularioCarrito{
+        max-width: 30rem;
+        .formulario{
+            margin-bottom: 6rem;
+            margin-left: -5rem;
+            .nombresDeForm{
+                color: #9f0000;
+                font-size: 2rem;
+              }
+            .form-control{
+                width: 40rem;
+                height: 4rem;
+              }
+          }
+          
+      }
+  }
+.divEnviar{
+    display: flex;
+    justify-content: center;
+    .enviar{
+        background-color: #9f0000;
+        height: 3.4rem;
+        width: 40rem;
+        margin-bottom: 4rem;
+      }
+  }

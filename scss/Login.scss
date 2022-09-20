@@ -1,0 +1,23 @@
+.swal2-modal{
+    background-color: #9f0000;
+    height: 34rem;
+    width: 31rem;
+    .swal2-title{
+        color: #ffffff;
+      }
+    swal2-html-container{
+        color: #ffffff;
+        .swal2-input{
+            margin: 2rem;
+            margin-bottom: 3rem;
+            background-color: white;
+            border-color: #000000;
+          }
+    }
+    .swal2-styled{
+        background-color: #000000;
+      }
+    .swal2-confirm{
+        background-color: #000000;
+      }
+}
