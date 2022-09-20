@@ -490,6 +490,3 @@ div.innerHTML = `
 
 bienvenido.append(div)
 
-if(localStorage.usuario === null || localStorage.usuario ==='Undefined'){
-          window.location = "login.html";
-        }
